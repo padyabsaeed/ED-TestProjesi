@@ -1,2 +1,2 @@
-# E-D-nTestProjesi
+# ED-TestProjesi
 E-Düğün Test Projesi
