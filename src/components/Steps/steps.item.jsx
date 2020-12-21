@@ -101,7 +101,7 @@ const StepItem = ({ data }) => {
       </div>
       <div className="stepItem__bg">{data.bgIcon}</div>
       <p className="stepItem__text">{data.body}</p>
-      <a href="#" className="stepItem__link">
+      <a href="/test" className="stepItem__link">
         Daha detaylı bilgi için tıklayınız.
       </a>
     </div>

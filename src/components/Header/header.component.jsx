@@ -10,9 +10,9 @@ const Header = () => {
           <span>Türkiye’nin Yeni Düğün Platformu</span>
         </div>
         <div className="header__links">
-          <a href="#">Giriş Yap</a>
+          <a href="/test">Giriş Yap</a>
           <span>|</span>
-          <a href="#">Üye Ol (Ücretsiz)</a>
+          <a href="/test">Üye Ol (Ücretsiz)</a>
         </div>
       </div>
     </div>
