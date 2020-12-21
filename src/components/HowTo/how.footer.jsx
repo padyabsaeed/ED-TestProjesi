@@ -12,7 +12,7 @@ const HowImageBox = () => {
         değildir. Sorularınız için ilan sahibi ile irtibata geçebilirsiniz. Yer
         Sağlayıcı Belge No : ….
       </div>
-      <img src={BarcodeImage} alt="barcode"/>
+      <img src={BarcodeImage} />
     </div>
   );
 };
