@@ -3,7 +3,7 @@ import "./how.style.scss";
 const HowImageBox = () => {
   return (
     <div className="howTo__imgBox">
-      <img src={Img1} />
+      <img src={Img1} alt="show a demo"/>
       <div className="playBtn">
         <svg
           xmlns="http://www.w3.org/2000/svg"
