@@ -1,0 +1,95 @@
+@import "../../sass/abstract/variables";
+.howTo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  &__imgBox {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .playBtn {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__items {
+    display: flex;
+    margin-top: 20px;
+  }
+}
+.firstItem {
+  position: relative;
+  width: 25%;
+  min-height: 200px;
+  overflow: hidden;
+  background-color: $color-violet-400;
+  svg {
+    position: absolute;
+    left: -30px;
+    height: 220px;
+  }
+  h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: normal;
+    color: white;
+  }
+}
+.item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  &-first {
+    background-color: $color-violet-300;
+  }
+  &-second {
+    background-color: $color-violet-200;
+  }
+  &-third{
+    background-color: $color-violet-100;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    svg {
+      width: 100px;
+      height: 60%;
+    }
+  }
+  &__title {
+    font-size: 20px;
+  }
+  &__description {
+    text-align: center;
+  }
+  button {
+    font-size: 15px;
+    margin: 10px 5px 
+  }
+}
+
+.footer {
+  margin-top: 20px;
+  display: flex;
+  img {
+    height: 50px;
+    margin-left: 10px;
+  }
+  &__text {
+    background-color: whitesmoke;
+    font-size: 9px;
+    padding: 5px;
+  }
+}

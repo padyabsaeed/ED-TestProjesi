@@ -1,0 +1,45 @@
+@import "../../sass/abstract/variables";
+$color-top: #001f60;
+.header {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  &__top {
+    flex-shrink: 0;
+    height: 30px;
+    background-color: $color-top;
+  }
+  &__bottom {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 10px 5%;
+    svg {
+      width: 200px;
+    }
+  }
+  &__logo-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    span {
+      margin-left: 20px;
+      font-size: 24px;
+      margin-top: 20px;
+      color: $color-primary;
+    }
+  }
+  &__links {
+    a {
+      font-size: 16px;
+      text-decoration: none;
+      color: $color-primary;
+      &:last-child {
+        color: $color-secondary;
+      }
+    }
+    span {
+      margin: 0 10px;
+    }
+  }
+}

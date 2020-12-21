@@ -1,0 +1,14 @@
+@import "./../../sass/abstract/variables";
+.btn {
+  border-radius: 3px;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 17px;
+  &.primary {
+    background-color: $color-primary;
+  }
+  &.secondary {
+    background-color: $color-secondary;
+  }
+}
