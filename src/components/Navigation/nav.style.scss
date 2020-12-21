@@ -1,21 +1,43 @@
+@import "../../sass/abstract/mixins";
 .navMenu {
   width: 100%;
-  min-height: 60px;
+  min-height: 6rem;
   background-color: #e6e6e6;
   display: flex;
-  padding: 20px 5%;
+  padding: 2rem 3%;
+  @include respond(big-desktop) {
+    padding: 2rem 5%;
+  }
   &__left {
     flex: 1;
     button {
-      margin-right: 50px;
+      margin-right: 3rem;
+      width: 16rem;
+      font-size: 0.9rem;
+      padding: 0;
+      @media only screen and (max-width: 16990px) and (min-width: 1350px) {
+        min-width: 25rem;
+        font-size: 1.2rem;
+      }
+
+      @include respond(big-desktop) {
+        margin-right: 4rem;
+        width: 25rem;
+        font-size: 1.2rem;
+      }
     }
   }
   &__right {
     display: flex;
     justify-content: flex-end;
     button {
-      margin-left: 10px;
-      min-width: 150px;
+      margin-left: 1rem;
+      min-width: 10rem;
+      font-size: 1.3rem;
+      @include respond(big-desktop) {
+        margin-left: 10px;
+        min-width: 150px;
+      }
     }
   }
 }

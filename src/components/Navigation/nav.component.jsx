@@ -5,9 +5,9 @@ const Nav = () => {
   return (
     <div className="navMenu">
       <div className="navMenu__left">
-        <CircleButton primary text="ARAMA MOTORLU NASIL CALISIR?" />
-        <CircleButton primary text="ARAMA MOTORLU NASIL CALISIR?" />
-        <CircleButton primary text="ARAMA MOTORLU NASIL CALISIR?" />
+        <CircleButton primary text="ARAMA MOTORU NASIL ÇALIŞIR?" />
+        <CircleButton primary text="IHALE SISTEMI NEDIR?" />
+        <CircleButton primary text="E-menü NEDIR?" />
       </div>
       <div className="navMenu__right">
         <Button secondary text="e-düğün nedir?" />

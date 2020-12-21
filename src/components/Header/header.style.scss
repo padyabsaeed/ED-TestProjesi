@@ -1,21 +1,33 @@
+@import "../../sass/abstract/mixins";
 @import "../../sass/abstract/variables";
 $color-top: #001f60;
 .header {
-  min-height: 100px;
+  min-height: 10rem;
   display: flex;
   flex-direction: column;
   &__top {
     flex-shrink: 0;
-    height: 30px;
+    height: 2rem;
     background-color: $color-top;
+    @include respond(big-desktop) {
+      height: 3rem;
+    }
   }
   &__bottom {
     flex: 1;
     display: flex;
     align-items: center;
-    padding: 10px 5%;
+    padding: 1rem 2%;
     svg {
-      width: 200px;
+      width: 15rem;
+      margin-top: -1.5rem;
+    }
+    @include respond(big-desktop) {
+      padding: 1rem 5%;
+      svg {
+        margin: 1rem 0;
+        width: 20rem;
+      }
     }
   }
   &__logo-box {
@@ -23,23 +35,30 @@ $color-top: #001f60;
     display: flex;
     align-items: center;
     span {
-      margin-left: 20px;
-      font-size: 24px;
-      margin-top: 20px;
+      margin-left: 2rem;
+      font-size: 1.5rem;
       color: $color-primary;
+      @include respond(big-desktop) {
+        margin-top: 2rem;
+        margin-left: 2rem;
+        font-size: 3rem;
+      }
     }
   }
   &__links {
     a {
-      font-size: 16px;
+      font-size: 1.6rem;
       text-decoration: none;
       color: $color-primary;
       &:last-child {
         color: $color-secondary;
       }
+      @include respond(big-desktop) {
+        font-size: 1.8rem;
+      }
     }
     span {
-      margin: 0 10px;
+      margin: 0 1rem;
     }
   }
 }

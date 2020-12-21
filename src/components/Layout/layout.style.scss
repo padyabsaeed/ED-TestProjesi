@@ -1,9 +1,13 @@
+@import "../../sass/abstract/mixins";
 .main {
   width: 100%;
   display: flex;
   flex-direction: column;
   background-color: white;
-  min-width: 1650px;
+  min-width: 1024px;
+  max-width: 1920px;
   overflow-x: auto;
   margin: auto;
+  @include respond(big-desktop) {
+  }
 }
